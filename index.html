@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Hello, world!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand navbar-dark bg-primary">
+      <a href="javascript:void();" class="navbar-brand">Sistemas Operacionais</a>
+      <span class="navbar-text ml-md-auto">
+        por Everton Barbosa Jr.
+      </span>
+    </nav>
+    <div id="main-container" class="container border rounded">
+      <div class="row justify-content-md-center">
+        <div class="col-md-auto">
+          <h2>Escalonamento de Processos</h2>
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-md-auto">
+          <h5>Filas Múltiplas</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <h6 class="text-center">Prioridade Nível 1 <span id="quantum-l1"></span></h6>
+          <ul class="list-group" id="lista-1">
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 class="text-center">Prioridade Nível 2 <span id="quantum-l2"></span></h6>
+          <ul class="list-group" id="lista-2">
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 class="text-center">Prioridade Nível 3 <span id="quantum-l3"></span></h6>
+          <ul class="list-group" id="lista-3">
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 class="text-center">Prioridade Nível 4 <span id="quantum-l4"></span></h6>
+          <ul class="list-group" id="lista-4">
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="util/ObservableRoundRobin.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
