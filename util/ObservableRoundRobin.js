@@ -88,17 +88,7 @@ function ObservableRoundRobin(items) {
     enumerable: false,
     writable: false,
     value: function() {
-      if (_array.length > -1) {
-        var index = _array.length - 1,
-          item = _array.pop();
-        delete _self[index];
-        raiseEvent({
-          type: "itemremoved",
-          index: index,
-          item: item
-        });
-        return item;
-      }
+      console.warn("Removido");
     }
   });
 
@@ -107,23 +97,7 @@ function ObservableRoundRobin(items) {
     enumerable: false,
     writable: false,
     value: function() {
-      for (var i = 0, ln = arguments.length; i < ln; i++) {
-        _array.splice(i, 0, arguments[i]);
-        defineIndexProperty(_array.length - 1);
-        raiseEvent({
-          type: "itemadded",
-          index: i,
-          item: arguments[i]
-        });
-      }
-      for (; i < _array.length; i++) {
-        raiseEvent({
-          type: "itemset",
-          index: i,
-          item: _array[i]
-        });
-      }
-      return _array.length;
+      console.warn("Removido");
     }
   });
 
